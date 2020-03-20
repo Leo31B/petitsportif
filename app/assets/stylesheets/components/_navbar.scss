@@ -21,8 +21,10 @@
   }
 }
 
-.menu {
+.menu-right {
   background-color: red;
+  position: absolute;
+  right: 120px;
   display: flex;
   justify-content: space-between;
   height: 55px;
