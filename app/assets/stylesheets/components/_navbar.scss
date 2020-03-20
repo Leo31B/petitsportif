@@ -13,5 +13,24 @@
 
 .navbar {
   background-color: #0C59A8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   height: 55px;
+  a {
+    color: #FFFFFF;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #D9D9D9;
+  }
+}
+
+.logo {
+  background-color: red;
+  width: 160px;
+  height: 55px;
+  p {
+    font-family: 'Permanent Marker';
+    font-size: 20px;
+    // line-height: 10px;
+  }
 }
