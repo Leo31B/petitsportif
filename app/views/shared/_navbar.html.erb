@@ -1,12 +1,17 @@
 <div class="mynavbar row">
+
   <div class="logo">
-    <p>Petit</p>
-    <div style="position: relative; top: -25px; left: 40px;">
-      <p>Sportif.com</p>
-    </div>
+    <%= link_to root_path do %>
+      <p>Petit</p>
+      <div style="position: relative; top: -25px; left: 40px;">
+        <p>Sportif.com</p>
+      </div>
+    <% end %>
   </div>
 
-  <%= link_to "Accueil", "/" %>
-  <%= link_to "Articles", articles_path %>
-  <%= link_to 'Espace parents', parents_path %>
+  <div class="menu">
+    <%= link_to "Accueil", "/" %>
+    <%= link_to "Articles", articles_path %>
+    <%= link_to 'Espace parents', parents_path %>
+  </div>
 </div>
