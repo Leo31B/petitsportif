@@ -3,13 +3,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   height: 55px;
   padding-left: 30px;
-  a {
-    color: #FFFFFF;
-  }
-  a:hover {
-    text-decoration: none;
-    color: #D9D9D9;
-  }
 }
 
 .logo {
@@ -21,12 +14,28 @@
   }
 }
 
-.menu {
-  background-color: red;
+.menu-right {
+  position: absolute;
+  right: 80px;
   display: flex;
   justify-content: space-between;
   height: 55px;
-  width: 300px;
+  width: 500px;
   padding-top: 15px;
-
+  a {
+    color: #FFFFFF;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #D9D9D9;
+  }
 }
+
+// .log-button {
+//   background-color: #004285;
+//   padding-left: 5px;
+//   padding-right: 5px;
+//   border-radius: 10px;
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+//   height: 25px;
+// }

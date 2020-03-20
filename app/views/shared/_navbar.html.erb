@@ -9,9 +9,19 @@
     <% end %>
   </div>
 
-  <div class="menu">
+  <div class="menu-right">
     <%= link_to "Accueil", "/" %>
     <%= link_to "Articles", articles_path %>
     <%= link_to 'Espace parents', parents_path %>
+    <% if user_signed_in? %>
+      <div class="log-button">
+        <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+      </div>
+    <% else %>
+      <div class="log-button">
+        <%= link_to "Connexion", new_user_session_path %>
+      </div>
+    <% end %>
   </div>
+
 </div>
