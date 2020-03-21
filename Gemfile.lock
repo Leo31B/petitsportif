@@ -49,6 +49,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.4)
     byebug (11.1.1)
     coderay (1.1.2)
@@ -194,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootsnap
+  bootstrap-will_paginate (= 1.0.0)
   devise
   dotenv-rails
   font-awesome-sass (~> 5.12.0)
