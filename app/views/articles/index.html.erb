@@ -1,10 +1,24 @@
-<h1>Listing all articles</h1>
+<div class="container">
+  <div class="article-h">
+    <h3>Nos articles</h3>
+  </div>
 
-<%= link_to "Create new article", new_article_path %>
+  <% @articles.each do |article| %>
+    <%=link_to article_path(article), class: "articles-link" do %>
+      <div class="article-box">
+        <div class="col">
+          <div class="box-text1 row">
+            <h3><%= article.title %></h3>
+          </div>
+          <div class="box-text2 row">
+            <p><%= article.description %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+   <% end %>
 
-<% @articles.each do |article| %>
-  <%=link_to article_path(article), class: "" do %>
-    <p><%= article.title%></p>
-  <% end %>
- <% end %>
+
+</div>
+
 

@@ -1,0 +1,39 @@
+.article-h {
+  display: flex;
+  justify-content: center;
+  color: #F3C047;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.articles-link {
+  h3 {
+    color: #F3C047;
+    font-size: 24px;
+  }
+  &:hover{
+    text-decoration: none !important;
+  }
+  width: 100px;
+}
+
+.article-box {
+  background-color: #004285;
+  max-width: 700px;
+  height: 100px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+.box-text1 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-text2 {
+  display: flex;
+  justify-content: center;
+}
