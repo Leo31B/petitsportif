@@ -12,9 +12,10 @@
     </div>
   </div>
 
-  <div class="document row">
-    <%= image_tag "perso2.png"%>
-  </div>
-
+  <% if @article.photo == true %>
+    <div class="document row">
+      <%= cl_image_tag @article.photo.key, width: 400, crop: :fill %>
+    </div>
+  <% end %>
 </div>
 
