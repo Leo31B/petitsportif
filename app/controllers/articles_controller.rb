@@ -23,9 +23,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    set_article
   end
 
   def update
+    set_article
     if @article.update(article_params)
      flash[:notice] = "Article was updated"
      redirect_to article_path(@article)
@@ -36,6 +38,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    set_article
     @article.destroy
     flash[:notice] = "Article was deleted"
     redirect_to articles_path

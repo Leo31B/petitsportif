@@ -1,0 +1,27 @@
+.article-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #F3C047;
+}
+
+.description {
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+}
+
+.personnage2 {
+  img {
+    width: 400px;
+  }
+}
+
+.document {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 400px;
+  }
+}
