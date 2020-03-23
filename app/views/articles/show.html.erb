@@ -1,6 +1,17 @@
 <div class="container">
-  <div class="back-button" style="margin-top: 20px;">
-    <%= link_to 'Retour', articles_path %>
+
+  <div class="row" style="margin-top: 20px;">
+    <div class="back-button">
+      <%= link_to 'Retour', articles_path %>
+    </div>
+      <% if user_signed_in? %>
+      <div class="edit-button">
+        <%= link_to 'Modifier', edit_article_path(@article) %>
+      </div>
+      <div class="delete-button">
+        <%= link_to 'Supprimer', article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
+      </div>
+      <% end %>
   </div>
 
   <div class="article-title row">
