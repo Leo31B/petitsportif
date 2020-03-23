@@ -10,18 +10,40 @@
   </div>
 
   <div class="menu-right">
-    <%= link_to "Accueil", "/" %>
-    <%= link_to "Articles", articles_path %>
-    <%= link_to 'Espace parents', parents_path %>
+    <div class="menu-ordi">
+      <%= link_to "Accueil", "/" %>
+    </div>
+    <div class="menu-ordi">
+      <%= link_to "Articles", articles_path %>
+    </div>
+    <div class="menu-ordi">
+      <%= link_to 'Espace parents', parents_path %>
+    </div>
     <% if user_signed_in? %>
-      <div class="log-button">
-        <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+      <div class="dropdown">
+        <span><%= image_tag "tennisball.png"%></span>
+        <div class="dropdown-content">
+          <div class="menu-phone">
+            <%= link_to "Accueil", "/" %>
+          </div>
+          <div class="menu-phone">
+            <%= link_to "Articles", articles_path %>
+          </div>
+          <div class="menu-phone">
+            <%= link_to 'Espace parents', parents_path %>
+          </div>
+          <div>
+            <%= link_to "Créer un Article", new_article_path %>
+          </div>
+          <div>
+            <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+          </div>
+        </div>
       </div>
     <% else %>
-      <div class="log-button">
-        <%= link_to "Connexion", new_user_session_path %>
-      </div>
+      <%= link_to "Connexion", new_user_session_path %>
     <% end %>
   </div>
 
 </div>
+
