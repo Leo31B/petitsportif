@@ -1,8 +1,11 @@
 <div class="container">
+  <div class="back-button" style="margin-top: 20px;">
+    <%= link_to 'Retour', articles_path %>
+  </div>
+
   <div class="article-title row">
     <h1><%= @article.title %></h1>
   </div>
-
   <div class="row">
     <div class="description col-sm-8">
       <p><%= @article.description %></p>
@@ -12,7 +15,7 @@
     </div>
   </div>
 
-  <% if @article.photo == true %>
+  <% if @article.photo.attached? %>
     <div class="document row">
       <%= cl_image_tag @article.photo.key, width: 400, crop: :fill %>
     </div>
