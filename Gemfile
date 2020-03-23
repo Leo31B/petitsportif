@@ -8,6 +8,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.2.4.1'
 gem 'redis'
+gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
@@ -17,6 +18,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'will_paginate', '~> 3.3'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'cloudinary', '~> 1.12.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

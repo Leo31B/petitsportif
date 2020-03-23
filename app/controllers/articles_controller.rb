@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.paginate(page: params[:page], per_page: 4)
+    @articles = Article.paginate(page: params[:page], per_page: 4).order('id DESC')
   end
 
   def create
@@ -19,12 +19,15 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    set_article
   end
 
   def edit
+    set_article
   end
 
   def update
+    set_article
     if @article.update(article_params)
      flash[:notice] = "Article was updated"
      redirect_to article_path(@article)
@@ -35,6 +38,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    set_article
     @article.destroy
     flash[:notice] = "Article was deleted"
     redirect_to articles_path
@@ -44,6 +48,7 @@ class ArticlesController < ApplicationController
 
     def article_params
      params.require(:article).permit(:title, :description, :photo, :video)
+     params.require(:article).permit(:title, :body, :photo)
     end
 
     def set_article
