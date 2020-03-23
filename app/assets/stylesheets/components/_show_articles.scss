@@ -7,6 +7,11 @@
   a {
     color: white;
   }
+  &:hover {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 .delete-button {
@@ -16,6 +21,11 @@
   margin-right: 20px;
   a {
     color: white;
+  }
+  &:hover {
+    a {
+      text-decoration: none;
+    }
   }
 }
 
