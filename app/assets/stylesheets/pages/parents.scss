@@ -20,3 +20,24 @@
     font-size: 18px;
   }
 }
+
+// ipadV1
+@media only screen and (width: 768px) and (height: 1024px) {
+  .footer {
+    margin-top: 255px;
+  }
+}
+
+//Ipad proV1
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .footer {
+    margin-top: 610px;
+  }
+}
+
+//Ipad proV2
+@media only screen and (width: 1366px) and (height: 1024px) {
+  .footer {
+    margin-top: 270px;
+  }
+}
