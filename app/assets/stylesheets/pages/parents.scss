@@ -2,5 +2,21 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   color: #F3C047;
+}
+
+.book {
+  margin-bottom: 75px;
+  img {
+    width: 300px;
+  }
+}
+
+.book-presentation {
+  text-align: justify;
+  p {
+    color: white;
+    font-size: 18px;
+  }
 }
