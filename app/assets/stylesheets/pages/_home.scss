@@ -21,3 +21,48 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .personnage1 img {
+    width: 100px;
+  }
+  .video {
+    display: none;
+  }
+}
+
+// ipadV1
+@media only screen and (width: 768px) and (height: 1024px) {
+  .personnage1 img {
+    width: 100px;
+  }
+  .video {
+    position: relative;
+    right: 250px;
+  }
+}
+
+//ipadV2
+@media only screen and (width: 1024px) and (height: 768px) {
+  .personnage1 img {
+    width: 200px;
+  }
+  .video {
+    position: relative;
+    right: 290px;
+  }
+}
+
+//Ipad proV1
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .personnage1 img {
+    width: 190px;
+  }
+  .video {
+    position: relative;
+    right: 300px;
+  }
+  .presentation {
+    margin-bottom: 270px;
+  }
+}
