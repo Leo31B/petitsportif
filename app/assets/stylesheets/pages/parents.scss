@@ -2,5 +2,18 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   color: #F3C047;
+}
+
+.book {
+
+}
+
+.book-presentation {
+  text-align: justify;
+  p {
+    color: white;
+    font-size: 18px;
+  }
 }
