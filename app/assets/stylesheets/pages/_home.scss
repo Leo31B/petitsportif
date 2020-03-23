@@ -4,7 +4,12 @@
   }
 }
 
+.video {
+
+}
+
 .presentation {
+  margin-top: 20px;
   h1 {
     color: #F3C047;
     text-align: center;
@@ -12,14 +17,7 @@
   }
   p {
     color: #FFFFFF;
-    text-align: justify;
+    text-align: center;
     font-size: 18px;
-  }
-}
-
-.latest-articles {
-  margin-top: 25px;
-  h3 {
-    color: #F3C047;
   }
 }
