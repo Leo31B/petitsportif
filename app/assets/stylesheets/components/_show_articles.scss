@@ -43,6 +43,17 @@
   font-size: 18px;
 }
 
+textarea {
+  // background-color: #1563B2;
+  background-color: red;
+  color: white;
+  overflow: hidden;
+  resize: none;
+  outline: none;
+  border: none;
+  text-align: justify;
+}
+
 .personnage2 {
   margin-bottom: 25px;
   img {
