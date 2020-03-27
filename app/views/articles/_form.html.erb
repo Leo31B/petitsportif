@@ -2,8 +2,8 @@
   <%= simple_form_for @article do |f| %>
     <%= f.input :title, label: "Titre:" %>
     <%= f.input :description, label: "Texte:" %>
-    <%= f.input :photo, as: :file %>
-    <%= f.input :video, as: :file %>
+    <%= f.input :photo, as: :file, label: "photo1" %>
+    <%= f.input :video, as: :file, label: "photo2" %>
 
   <div class="submit-button">
     <%= f.button :submit, value: "Créer l'article" %>
