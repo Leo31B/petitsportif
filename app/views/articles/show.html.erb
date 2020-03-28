@@ -19,23 +19,23 @@
   </div>
   <div class="row">
     <div class="description col-sm-8">
-      <p><%= @article.description %></p>
+      <textarea readonly cols="80" rows="20"><%= @article.description %></textarea>
     </div>
     <div class="personnage2 col-sm-4">
      <%= cl_image_tag("perso2_ia2jri.png", :height=>450, :width=>400, :crop=>"scale") %>
     </div>
   </div>
 
-  <div class="photo row">
+  <div class="document row">
     <% if @article.photo.attached? %>
-      <div class="document col">
+      <div class="picture1 col">
         <%= cl_image_tag @article.photo.key, height: 400, width: 500, crop: :fit %>
       </div>
     <% end %>
 
     <% if @article.video.attached? %>
-      <div class="document col">
-        <%= cl_image_tag @article.video.key, height: 400, width: 500, crop: :fit %>
+      <div class="video1 col">
+        <%= cl_video_tag @article.video.key, height: 400, width: 500, crop: :fit, :controls => true %>
       </div>
     <% end %>
   </div>
