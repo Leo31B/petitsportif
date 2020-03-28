@@ -44,10 +44,10 @@
 }
 
 textarea {
-  // background-color: #1563B2;
-  background-color: red;
+  background-color: #1563B2;
+  // background-color: red;
   color: white;
-  overflow: hidden;
+  // overflow: hidden;
   resize: none;
   outline: none;
   border: none;
@@ -61,7 +61,13 @@ textarea {
   }
 }
 
-.document {
+.picture1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video1 {
   display: flex;
   justify-content: center;
   margin-top: 40px;
