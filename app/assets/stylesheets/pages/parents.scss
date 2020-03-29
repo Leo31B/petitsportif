@@ -1,4 +1,4 @@
-.attente {
+.titre-parents {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -19,6 +19,13 @@
     color: white;
     font-size: 18px;
   }
+}
+
+.video-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 // ipadV1
