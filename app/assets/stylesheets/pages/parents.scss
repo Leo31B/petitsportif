@@ -28,6 +28,20 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 760px) {
+  .book {
+    margin-left: 75px;
+    img {
+      width: 200px;
+    }
+  }
+  .video-parent {
+    video {
+      width: 350px;
+    }
+  }
+}
+
 // ipadV1
 @media only screen and (width: 768px) and (height: 1024px) {
   .footer {

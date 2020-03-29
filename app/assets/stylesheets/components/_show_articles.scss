@@ -81,16 +81,39 @@ textarea {
 // }
 
 .video1 {
-  // video {
-  //   outline: none;
-  // }
+  video {
+    outline: none;
+  }
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .personnage2 {
     display: none;
+  }
+  .article-title {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  textarea {
+    width: 350px;
+  }
+  .picture1 {
+    margin-bottom: 50px;
+    img {
+      width: 350px;
+    }
+  }
+  .back-button {
+    margin-left: 10px;
+  }
+  .video1 {
+    margin-bottom: 50px;
+    video {
+      width: 350px;
+    }
   }
 }

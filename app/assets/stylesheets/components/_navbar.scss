@@ -34,6 +34,19 @@
   }
 }
 
+.menu-phone {
+  margin-left: auto;
+  margin-right: 30px;
+  padding: 10px;
+  a {
+    color: #FFFFFF;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #D9D9D9;
+  }
+}
+
 .dropdown {
   img {
     width: 30px;
@@ -49,19 +62,15 @@
   position: absolute;
   right: -10px;
   display: none;
+  z-index: 100;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
-  .dropdown {
-    margin-left: auto;
-    position: relative;
-    left: 50px;
-  }
-  .menu-ordi {
+@media screen and (max-width: 760px) {
+  .menu-right {
     display: none;
   }
 }
