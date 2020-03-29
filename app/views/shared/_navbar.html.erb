@@ -8,30 +8,21 @@
       </div>
     <% end %>
   </div>
-
+  <!-- Menu ordi -->
   <div class="menu-right">
-    <div class="menu-ordi">
+    <div>
       <%= link_to "Accueil", "/" %>
     </div>
-    <div class="menu-ordi">
+    <div>
       <%= link_to "Articles", articles_path %>
     </div>
-    <div class="menu-ordi">
+    <div>
       <%= link_to 'Espace parents', parents_path %>
     </div>
     <% if user_signed_in? %>
       <div class="dropdown">
         <span><%= image_tag "tennisball.png"%></span>
         <div class="dropdown-content">
-          <div class="menu-phone">
-            <%= link_to "Accueil", "/" %>
-          </div>
-          <div class="menu-phone">
-            <%= link_to "Articles", articles_path %>
-          </div>
-          <div class="menu-phone">
-            <%= link_to 'Espace parents', parents_path %>
-          </div>
           <div>
             <%= link_to "Créer un Article", new_article_path %>
           </div>
@@ -43,6 +34,33 @@
     <% else %>
       <%= link_to "Connexion", new_user_session_path %>
     <% end %>
+  </div>
+  <!-- Menu phone -->
+  <div class="menu-phone">
+    <div class="dropdown">
+        <span><%= image_tag "tennisball.png"%></span>
+        <div class="dropdown-content">
+          <div>
+            <%= link_to "Accueil", "/" %>
+          </div>
+          <div>
+            <%= link_to "Articles", articles_path %>
+          </div>
+          <div>
+            <%= link_to 'Espace parents', parents_path %>
+          </div>
+          <div>
+            <%= link_to "Créer un Article", new_article_path %>
+          </div>
+          <% if user_signed_in? %>
+            <div>
+              <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+            </div>
+          <% else %>
+            <%= link_to "Connexion", new_user_session_path %>
+          <% end %>
+        </div>
+      </div>
   </div>
 
 </div>
