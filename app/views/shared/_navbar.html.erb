@@ -49,16 +49,6 @@
           <div>
             <%= link_to 'Espace parents', parents_path %>
           </div>
-          <div>
-            <%= link_to "Créer un Article", new_article_path %>
-          </div>
-          <% if user_signed_in? %>
-            <div>
-              <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
-            </div>
-          <% else %>
-            <%= link_to "Connexion", new_user_session_path %>
-          <% end %>
         </div>
       </div>
   </div>
