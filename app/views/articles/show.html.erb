@@ -29,7 +29,10 @@
   <div class="document row">
     <% if @article.photo.attached? %>
       <div class="picture1 col">
-        <%= cl_image_tag @article.photo.key, height: 400, width: 500, crop: :fit %>
+       <!--  <input type="checkbox" id="zoomCheck"> -->
+       <!--  <label for="zoomCheck"> -->
+          <%= cl_image_tag @article.photo.key, height: 450, width: 550, crop: :fit %>
+       <!--  </label> -->
       </div>
     <% end %>
 

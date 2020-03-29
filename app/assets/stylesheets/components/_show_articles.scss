@@ -45,9 +45,7 @@
 
 textarea {
   background-color: #1563B2;
-  // background-color: red;
   color: white;
-  // overflow: hidden;
   resize: none;
   outline: none;
   border: none;
@@ -67,7 +65,25 @@ textarea {
   margin-top: 40px;
 }
 
+// input[type=checkbox] {
+//   display: none;
+// }
+
+// .picture1 img {
+//   margin: 100px;
+//   transition: transform 0.25s ease;
+//   cursor: zoom-in;
+// }
+
+// input[type=checkbox]:checked ~ label > img {
+//   transform: scale(2);
+//   cursor: zoom-out;
+// }
+
 .video1 {
+  video {
+    outline: none;
+  }
   display: flex;
   justify-content: center;
   margin-top: 40px;
