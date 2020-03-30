@@ -101,6 +101,12 @@
   color: #F3C047;
 }
 
+@media screen and (max-width: 760px) {
+  .articles-link h3 {
+    font-size: 20px;
+  }
+}
+
 // ipadV1
 @media only screen and (width: 768px) and (height: 1024px) {
   .footer {
