@@ -31,7 +31,22 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+}
+
+.extrait-titre {
+  color: #F3C047;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.extrait-text {
+  text-align: justify;
+  p {
+    color: white;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 760px) {
