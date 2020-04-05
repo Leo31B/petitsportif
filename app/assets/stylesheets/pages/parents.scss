@@ -73,36 +73,22 @@
 }
 
 @media screen and (max-width: 760px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   .book {
     margin-left: 75px;
     img {
       width: 200px;
     }
   }
-  .video-parent {
-    video {
-      width: 350px;
-    }
+  .video-parent video {
+    width: 350px;
   }
-}
-
-// ipadV1
-@media only screen and (width: 768px) and (height: 1024px) {
-  .footer {
-    margin-top: 255px;
-  }
-}
-
-//Ipad proV1
-@media only screen and (width: 1024px) and (height: 1366px) {
-  .footer {
-    margin-top: 610px;
-  }
-}
-
-//Ipad proV2
-@media only screen and (width: 1366px) and (height: 1024px) {
-  .footer {
-    margin-top: 270px;
+  .video-facts video {
+    width: 350px;
   }
 }
