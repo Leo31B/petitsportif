@@ -27,7 +27,7 @@
   </div>
 
   <div class="video-parent row">
-    <%= cl_video_tag("petitsportif/pr%C3%A9sentation_LIVRE_FB_LD_t2cor2", :width=>600, :crop=>"scale", :controls => true) %>
+    <%= cl_video_tag("petitsportif/pr%C3%A9sentation_LIVRE_FB_LD_t2cor2", :video_codec=>"auto", :width=>600, :crop=>"scale", :controls => true) %>
   </div>
 
   <div class="facts-title">
@@ -42,6 +42,10 @@
     Et bien souvent on est loin de ce qui se passe dans la tête de l’enfant. Lui, il veut peut être tout simplement vous faire plaisir?…
     <br>
     Joint à ce petit mot, une vidéo un peu décalée qui parle de ces sujets!</p>
+  </div>
+
+  <div class="video-facts">
+    <%= cl_video_tag("petitsportif/Facts_elznfw", :video_codec=>"auto", :width=>600, :crop=>"scale", :controls => true) %>
   </div>
 
   <div class="extrait-titre">
