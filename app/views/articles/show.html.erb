@@ -38,7 +38,7 @@
 
     <% if @article.video.attached? %>
       <div class="video1 col">
-        <%= cl_video_tag @article.video.key, height: 400, width: 500, crop: :fit, quality: :auto, :controls => true %>
+        <%= cl_video_tag @article.video.key, height: 400, width: 500, crop: :fit, quality: :auto, :video_codec=>"auto", :controls => true %>
       </div>
     <% end %>
   </div>
