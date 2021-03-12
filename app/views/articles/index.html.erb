@@ -19,7 +19,7 @@
    <% end %>
 
   <div class="mypagination">
-    <%= will_paginate %>
+    <%= will_paginate @articles, :previous_label => 'Précédent', :next_label => 'Suivant', :page_links => false %>
   </div>
 
 </div>
